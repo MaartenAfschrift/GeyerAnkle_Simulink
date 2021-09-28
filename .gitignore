@@ -1,0 +1,23 @@
+# Working test files
+/Debug/
+/Depricated/
+/PolynomialFitting/MA/
+/Results/
+/figs/
+
+# TwinCAT files
+*_TcCom*
+slprj/
+*_tct/
+*_etl_hrt/
+TrialLicense.tclrs
+*.suo
+_ModuleInstall/
+_Boot/
+
+# MATLAB/Simulink files
+*.asv
+*.slx.autosave
+*.slxc
+*sfun.mexw64
+*.r2015b
