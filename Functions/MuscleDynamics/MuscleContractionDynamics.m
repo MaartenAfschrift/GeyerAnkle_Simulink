@@ -2,8 +2,12 @@ function [dlMtildedt, F,Fce_tilde] = MuscleContractionDynamics(a,lMtilde,lMT)
 % MuscleContractionDynamics: explicit contraction dynamics of two hill-type muscles
 % as in DeGroote 2016.
 
+persistent params
+
 % load muscle properties
-[~,~,params] =  LoadMuscleProperties();
+if isempty(params)
+    [~,~,params] =  LoadMuscleProperties();
+end
 
 % set tendon stiffes and adapt F/l curve accordingly
 ATendon =  [20; 35];
