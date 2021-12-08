@@ -20,4 +20,4 @@ QualisysDataBus = struct2bus(QualisysDataBus_struct, 'QualisysDataBus');
 clear QualisysDataBus_struct;
 
 %% Run WE2 init
-WE2_library_init;
+% WE2_library_init;
