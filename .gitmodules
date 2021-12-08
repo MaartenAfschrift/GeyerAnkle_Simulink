@@ -1,0 +1,3 @@
+[submodule "wr-actuator-library"]
+	path = wr-actuator-library
+	url = https://bitbucket.org/ctw-bw/wr-actuator-library.git
