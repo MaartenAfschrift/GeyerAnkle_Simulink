@@ -13,13 +13,12 @@ persistent counter
 
 sf = 1000; % sampling frequency
 
-% initialise callibrated value
-if isempty(qCal)
-    qCal = 0;
-end
-
+% initialise values
 if isempty(calibrated)
-    calibrated = true;
+    calibrated = false;
+    counter = 0;
+    nosamp = max(1, floor(caltime_s*1000));
+    qCal = 0;
 end
 
 % start a new callibration period
