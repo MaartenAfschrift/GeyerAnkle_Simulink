@@ -1,17 +1,7 @@
 %% Expand path
-
-% add the exoskeleton libraries
-% wr_Library = 'C:\Users\Maarten\Documents\GeyerAnkle\wr-actuator-library';
 wr_Library = fullfile(pwd,'wr-actuator-library');
 addpath(genpath(wr_Library));
-
-% add functions for the simulink model
-addpath('Functions/MuscleDynamics');
-addpath('Functions/MuscleGeometry');
-addpath('Functions/MuscleProperties');
-addpath('Functions/Misc');
-addpath('Functions/Reflexes');
-
+addpath(genpath('Functions'));
 
 %% Load databus
 QualisysDataBus_struct.M1x = double(0);
