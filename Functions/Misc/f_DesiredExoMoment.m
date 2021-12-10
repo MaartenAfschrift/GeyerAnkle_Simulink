@@ -8,7 +8,7 @@ function [tau_Left, tau_Right]  = f_DesiredExoMoment(tau_Reflex, tau_ReflexUnp,.
 %   3. BodyMass: in kg
 %   4. BodyLength: in m
 %   5. MaxTorque: in Nm
-%   6. Torque scale % of assistance provided with exo
+%   6. TroqueScale: % of assistance provided with exo
 %   7. ControlType: value between 0 and 3 to selected controller/
 %       0: zero impedance
 %       1: reflex model without COMd feedback
