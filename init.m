@@ -1,7 +1,10 @@
 %% Expand path
-wr_Library = fullfile(pwd,'wr-actuator-library');
-addpath(genpath(wr_Library));
-addpath(genpath('Functions'));
+
+[directory, ~, ~] = fileparts(mfilename('fullpath'));
+
+addpath(fullfile(directory, 'wr-actuator-library'));
+
+addpath(genpath(fullfile(directory, 'Functions')));
 
 %% Load databus
 QualisysDataBus_struct.M1x = double(0);
@@ -18,4 +21,4 @@ QualisysDataBus = struct2bus(QualisysDataBus_struct, 'QualisysDataBus');
 clear QualisysDataBus_struct;
 
 %% Run WE2 init
-run(fullfile(wr_Library,'WE2_library_init.m'));
+WE2_library_init;
