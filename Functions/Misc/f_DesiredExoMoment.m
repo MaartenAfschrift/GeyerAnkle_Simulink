@@ -38,12 +38,16 @@ end
 tau_Left = -tauModel(1) * TorqueScale;
 tau_Right = -tauModel(2) * TorqueScale;
 
-if abs(tau_Left) > MaxTorque
+if tau_Left > MaxTorque
     tau_Left = MaxTorque;
+elseif tau_Left < -MaxTorque
+    tau_Left = -MaxTorque;
 end
 
-if abs(tau_Right) > MaxTorque
+if tau_Right > MaxTorque
     tau_Right = MaxTorque;
+elseif tau_Right < -MaxTorque
+    tau_Right = -MaxTorque;
 end
 end
 
