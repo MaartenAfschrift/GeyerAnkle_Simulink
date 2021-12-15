@@ -21,14 +21,17 @@ tau = tau_Reflex./(70*1.75).*(BodyMass*BodyLength);
 % Scale factor based on body proportions
 tauUnp = tau_ReflexUnp./(70*1.75).*(BodyMass*BodyLength);
 
+tauModel = zeros(2,1);
 if ControlType == 0
     tauModel = 0;
 elseif ControlType ==1
     tauModel = tauUnp;
 elseif ControlType == 2
-    tauModel = tau;
+    tauModel(1) = tauUnp(1);
+    tauModel(2) = tau(2);
 elseif ControlType == 3 
-    tauModel = tau - tauUnp;
+    tauModel(1) = 0;
+    tauModel(2) = tau(2) - tauUnp(2);
 else
     tauModel = tau;
 end

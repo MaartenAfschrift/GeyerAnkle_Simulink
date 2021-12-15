@@ -1,3 +1,4 @@
+time
 LA_StatusWord
 LA_PositionActualValue_counts
 LA_VelocityActualValue_IU
@@ -139,6 +140,7 @@ e_Sol_R
 ControlType
 MaxTorque
 ScaleTorque
+COM_err_Bound
 M1x
 M1y
 M1z
