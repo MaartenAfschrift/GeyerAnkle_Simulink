@@ -1,5 +1,4 @@
 time
-timestamp
 LA_StatusWord
 LA_PositionActualValue_counts
 LA_VelocityActualValue_IU
@@ -56,6 +55,7 @@ RA_DesiredTorqueLimited_Nm
 RA_DesiredMotorTorque_Nm
 RA_DesiredMotorTorqueLimited_Nm
 RA_DOB_Torque_Nm
+timeSys
 FootContact_Left
 FootContact_Right
 Phase_Left
