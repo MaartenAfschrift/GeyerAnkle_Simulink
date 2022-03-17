@@ -8,6 +8,7 @@ addpath(genpath(fullfile(directory, 'Functions')));
 
 %% Run WE2 init
 WE2_library_init;
+ForcePlateLopes;
 
 %% Load databus
 QualisysDataBus_struct.M1x = double(0);
