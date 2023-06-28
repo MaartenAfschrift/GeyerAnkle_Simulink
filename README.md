@@ -1,6 +1,6 @@
 # Geyer Ankle Simulink Model
 
-This repository contains the Simulink model for the Geyer Ankle. Made by Maarten Afschrift, based on the work by Cristina Bayón.
+This repository contains the Simulink model to control the symbitron ankle-foot exoskeleton. We used this controller in the study "Assisting walking balance using a bio-inspired exoskeleton controller" https://doi.org/10.1186/s12984-023-01205-9 .
 
 ## Build
 
